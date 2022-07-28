@@ -109,19 +109,6 @@ axd['up'].set_ylabel('personas')
 axd['up'].set_ylim(1000000, 2200000)
 axd['up'].yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}')) #formato de axis Y, pone comas como separador de miles
 
-# Subplot 4: Cambio mensual
-#dfcotizantes46salarios.tail(18).plot(kind='bar',
-                             #color='#008B00', 
-                             #ax = axd['upright'],
-                             #legend = None)
-
-#axd['upright'].set_title('Cambio en los cotizantes con ingresos de 4-6 salarios minimos')
-#axd['upright'].set_xlabel('Mes')
-#axd['upright'].set_ylabel('personas')
-#axd['upright'].set_ylim(0, 2200000)
-#axd['upright'].yaxis.set_major_formatter(mpl.ticker.StrMethodFormatter('{x:,.0f}')) #formato de axis Y, pone comas como separador de miles
-#axd['upright'].xaxis.set_major_formatter(mdates.ConciseDateFormatter(axd['upright'].xaxis.get_major_locator()))
-
 plt.subplots_adjust(wspace = 0.15, hspace = 0.5)
 
 plt.show()
